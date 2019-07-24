@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+    <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+        <body>
+            <referenceBlock name="register-link" remove="true" />
+            <referenceBlock name="my-account-link" remove="true" /> 
+           <referenceBlock name="wish-list-link" remove="true" />
+            <move element="minicart" destination="header.panel" before="-"/> 
+             <move element="header" destination="header.panel" before="authorization-link-login"/>
+            <move element="catalog.topnav" destination="sidebar.main" />
+            <referenceContainer name="header.panel">
+                <block class="Magento\Theme\Block\Html\Header" name="header" template="html/header.phtml"/>
+            </referenceContainer>
+            <referenceContainer name="header-wrapper">
+                <block class="Magento\Theme\Block\Html\Header" name="link" template="html/link.phtml"/>
+            </referenceContainer>
+            <referenceContainer name="header-wrapper"> 
+                <block class="Magento\Cms\Block\Block" name="header-link-1"> 
+                    <arguments> 
+                        <argument name="Cake header" xsi:type="string">header-link-1</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="header-link-2"> 
+                    <arguments> 
+                        <argument name="Cake header" xsi:type="string">header-link-2</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="header-link-3"> 
+                    <arguments> 
+                        <argument name="Cake header" xsi:type="string">header-link-3</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="header-link-4"> 
+                    <arguments> 
+                        <argument name="Cake header" xsi:type="string">header-link-4</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="header-link-5"> 
+                    <arguments> 
+                        <argument name="Cake header" xsi:type="string">header-link-5</argument> 
+                    </arguments> 
+                </block>
+            </referenceContainer>
+        </body>
+    </page> 
