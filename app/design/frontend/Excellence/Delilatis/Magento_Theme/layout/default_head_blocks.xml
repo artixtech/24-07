@@ -5,5 +5,8 @@
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js" src_type="url" type="text/javascript" />
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" src_type="url" type="text/javascript" />
        <css src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"  src_type="url" rel="stylesheet" type="text/css"  />
+        <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
+  
    </head>
 </page> 

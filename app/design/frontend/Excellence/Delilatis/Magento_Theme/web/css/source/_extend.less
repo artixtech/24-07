@@ -13,9 +13,9 @@
         border-bottom: none;
         background-color: @color;
         .panel.header {
-            padding: 20px 0px 0px 0px;
+            padding: 10px 0px 0px 0px;
             a{
-                color: black;
+                color: #484343;
             }
             a:hover{
                 color: rgb(156, 5, 5);
@@ -24,7 +24,6 @@
         }
     }
 }
-
 .panel {
     margin-bottom: 0px !important;
     border:none;
@@ -37,9 +36,10 @@
 .header-link.col-md-3{
     display: inline-block;
     float: right;
+    height: 0px;
     list-style: none;
-    padding-left: 10px;
-    font-size: 14px;
+    padding-left: 56px;
+    font-size: 13px;
     .header-table{
         width: 100%;
         list-style: none;
@@ -60,7 +60,7 @@
     background: url('@{baseDir}images/cart.png');
     background-repeat: no-repeat;
     display: inline-block;
-        width: 24px;
+    width: 24px;
     height: 18px;
     content: '';
     vertical-align: sub;
@@ -83,34 +83,67 @@
 }
 .header.panel > .header.links > li {
     margin: 0px;
-    font-size: 14px;
+    font-size: 13px;
 }
 //Start Header Content//
 .header.content{
     font-family: @family;
 }
 #search{
-        border: 1px solid black !important;
+    border: 1px solid black !important;
+    height: 26px;
+}               
+.block-search{
+    width: 230px;
+    margin-top: 60px;
 }
 .header-cake-link.col-md-6{
     display: inline-block;
     font-size: 15px;
+    margin-top: 70px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    margin-left: 35px;
     ul{
         list-style: none;
         .header-5{
-            padding-right: 0px;
+            padding: 0px;
         }
         .header-4{
-            padding-right: 0px;
+            padding:0px;
+            width: 23%;
+        }
+        .header-3{
+            padding: 0px;
+        }
+        .header-2{
+            width: 14%;
+            padding: 0px;
+        }
+        .header-1{
+            width: 12%;
+            padding: 0px;
         }
         a{
-            color: black;
+            color: #484343;
         }
         a:hover{
             color: rgb(156, 5, 5);
             text-decoration: none;  
         }
     }
+}
+.logo{
+    margin: 0px;
+    margin-top: -7px;
+}
+.submit{
+    padding: 3px;
+    right: 2px;
+}
+.block-search .action.search:before {
+    color: #0e0c0c !important;
+    font-size: 27px  !important;
 }
 // Start Header Section
 //Start Navigation section
@@ -123,17 +156,78 @@
     padding: 0px;
 }
 .page-layout-2columns-left .column.main{
-    width:70%;
+    width:75%;
 }
 .page-layout-2columns-left .sidebar-main{
     padding: 0px;
-    width: 24%;
+    width: 25%;
     .navigation{
         background-color:@color;
         border: none;
         font-weight: 100;
-        font-size: 14px;
+        font-size: 15px;
         font-family: @family;
+        ul{
+            padding: 0px;
+        }
+        a{
+            color: #484343;
+        }
+        .level0.category-item.first.level-top{
+            display: inherit;
+            height: 30px;
+            a{
+                color: rgb(156, 5, 5)
+            }
+        }
+        .level0.category-item.level-top{
+            display: inherit;
+            width: 100%;
+            height: 25px;
+        }
     }
 }
+.page-layout-2columns-left .sidebar-additional{
+    display: none;
+}
+
+.bx-wrapper{
+    float: right;
+    margin:0px;
+    .bx-viewport{
+        height: 300px !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border:none !important;
+    }
+    .bx-caption{
+        background: transparent; 
+        position: absolute;
+        top: 29%;
+        span{
+            color: white;
+            font-family: @family;
+            font-weight: 100 !important;
+            font-size: 40px;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+    }
+}
+.bxslider{
+    div{
+        width: 578px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom: 0;
+}
 //End Body Section
+@media only screen and (max-width: 768px) and (min-width: 425px){
+    .header-link.col-md-3{
+        padding-left: 10px;
+    }
+}
