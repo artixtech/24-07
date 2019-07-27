@@ -24,40 +24,59 @@
     $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::DEFAULT_VIEW;
     $description = false;
 ?>
-<div class="less-essential">
-    <div style="margin-left: 2%;">
+<div class="">
+    <!-- <div style="margin-left: 2%;">
         <h2 style="font-weight: 600;font-family: 'Oswald', sans-serif;">
             LES ESSENTIELS
         </h2>
-    </div>
+    </div> -->
     <div>
-        <div class="bxslider">
+        <div class="bxslider cake-slider">
             <?php 
                 foreach ($items as $_item) {
-                    ?>
-                  <div>
-                            <a href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>" class="product-item-photo">
-                                <?= $block->getImage($_item, $image)->toHtml() ?>
-                            </a>
-                            <div class="product-item-details text-center">
-                                <strong class="product-item-name">
-                                    <a title="<?= $block->escapeHtml($_item->getName()) ?>"
-                                       href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>"
-                                       class="product-item-link">
-                                        <?= $block->escapeHtml($_item->getName()) ?>
-                                    </a>
-                                </strong>
-                                <?php
-                                echo $block->getProductPriceHtml($_item, $type);
-                                ?>
-                            </div>
-                        </div>
-                    <?php
-                }
             ?>
-            
-            
+            <div>
+                <a href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>" class="product-item-photo">
+                    <?= $block->getImage($_item, $image)->toHtml() ?>
+                </a>
+                <div class="product-item-details text-center">
+                    <strong class="product-item-name">
+                        <a title="<?= $block->escapeHtml($_item->getName()) ?>"
+                            href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>"
+                            class="product-item-link">
+                            <?= $block->escapeHtml($_item->getName()) ?>
+                        </a>
+                    </strong>
+                    <?php
+                        echo $block->getProductPriceHtml($_item, $type);
+                    ?>
+                </div>
+            </div>
+            <?php
+            }
+            ?>            
         </div>
     </div>
 </div>
 <?php endif;?>
+<!-- <script type="text/javascript" xml="space">
+    require([
+        'jquery',
+        'bxSlider'
+    ], function ($) {
+        'use strict';
+        // $.noConflict();
+
+    
+            $('.cake').bxSlider({
+                // controls: true,
+                captions: true,
+                slideWidth: 200,
+                minSlides:3,
+                maxSlides:3,
+                moveSlides:3
+            });
+        });
+    });
+
+</script> -->

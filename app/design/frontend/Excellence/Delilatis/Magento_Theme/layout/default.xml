@@ -13,6 +13,9 @@
             <referenceContainer name="header-wrapper">
                 <block class="Magento\Theme\Block\Html\Header" name="link" template="html/link.phtml"/>
             </referenceContainer>
+             <referenceContainer name="footer-container">
+                <block class="Magento\Theme\Block\Html\Footer" name="footer" template="html/footer.phtml"/>
+            </referenceContainer>
             <referenceContainer name="header-wrapper"> 
                 <block class="Magento\Cms\Block\Block" name="header-link-1"> 
                     <arguments> 
@@ -40,5 +43,52 @@
                     </arguments> 
                 </block>
             </referenceContainer>
+            <referenceContainer name="footer-container"> 
+                <block class="Magento\Cms\Block\Block" name="delilahs_social_icon"> 
+                    <arguments> 
+                        <argument name="Delilahs Social" xsi:type="string">delilahs_social_icon</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="delilahs_social_link"> 
+                    <arguments> 
+                        <argument name="Delilahs Social" xsi:type="string">delilahs_social_link</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="delilahs_newsletter"> 
+                    <arguments> 
+                        <argument name="Delilahs newsletter" xsi:type="string">delilahs_newsletter</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="delilahs_logo"> 
+                    <arguments> 
+                        <argument name="Delilahs logo" xsi:type="string">delilahs_logo</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="delliahs_para"> 
+                    <arguments> 
+                        <argument name="Delliahs para" xsi:type="string">delliahs_para</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="delilahs_sub"> 
+                    <arguments> 
+                        <argument name="Delilahs sub" xsi:type="string">delilahs_sub</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="delilahs_bmmi"> 
+                    <arguments> 
+                        <argument name="Delilahs bmmi" xsi:type="string">delilahs_bmmi</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="delilahs_visit"> 
+                    <arguments> 
+                        <argument name="Delilahs visit" xsi:type="string">delilahs_visit</argument> 
+                    </arguments> 
+                </block>
+                <block class="Magento\Cms\Block\Block" name="delilahs_copyright"> 
+                    <arguments> 
+                        <argument name="Delilahs Copyright" xsi:type="string">delilahs_copyright</argument> 
+                    </arguments> 
+                </block>
+            </referenceContainer> 
         </body>
     </page> 

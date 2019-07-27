@@ -25,28 +25,28 @@
     $description = false;
 ?>
 <div class="bxslider">
-            <?php 
-                foreach ($items as $_item) {
-                    ?>
-                  <div>
-                            <a href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>" class="product-item-photo">
-                                <?= $block->getImage($_item, $image)->toHtml() ?>
-                            </a>
-                            <div class="product-item-details text-center">
-                                <strong class="product-item-name">
-                                    <a title="<?= $block->escapeHtml($_item->getName()) ?>"
-                                       href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>"
-                                       class="product-item-link">
-                                        <?= $block->escapeHtml($_item->getName()) ?>
-                                    </a>
-                                </strong>
-                                <?php
-                                echo $block->getProductPriceHtml($_item, $type);
-                                ?>
-                            </div>
-                    </div>
-                    <?php
-                    }
-                    ?>      
+    <?php 
+        foreach ($items as $_item) {
+    ?>
+    <div>
+        <a href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>" class="product-item-photo">
+            <?= $block->getImage($_item, $image)->toHtml() ?>
+        </a>
+        <div class="product-item-details text-center">
+            <strong class="product-item-name">
+                <a title="<?= $block->escapeHtml($_item->getName()) ?>"
+                   href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>"
+                   class="product-item-link">
+                    <?= $block->escapeHtml($_item->getName()) ?>
+                </a>
+            </strong>
+            <?php
+                echo $block->getProductPriceHtml($_item, $type);
+            ?>
+        </div>
+    </div>
+    <?php
+        }
+    ?>      
 </div>
 <?php endif;?>

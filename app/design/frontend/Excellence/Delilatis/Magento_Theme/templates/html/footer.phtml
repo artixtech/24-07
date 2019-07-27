@@ -1,0 +1,84 @@
+<div class="footer content">
+    <div class="row">
+        <div class="delilahs_social col-md-7 col-sm-7 col-xs-6">
+            <div class="social_icon col-md-2 col-sm-2 col-xs-3">
+                <?php
+                    echo $this->getLayout()
+                    ->createBlock('Magento\Cms\Block\Block')
+                    ->setBlockId('delilahs_social_icon')
+                    ->toHtml();
+                ?>
+            </div>
+            <div class="social_link col-md-10 col-sm-10 col-xs-9">
+                <?php
+                    echo $this->getLayout()
+                    ->createBlock('Magento\Cms\Block\Block')
+                    ->setBlockId('delilahs_social_link')
+                    ->toHtml();
+                ?>
+            </div>
+        </div>
+        <div class="delilahs_newsletter col-md-5 col-sm-5 col-xs-6">
+            <?php
+                echo $this->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('delilahs_newsletter')
+                ->toHtml();
+            ?>
+        </div>
+    </div>
+    <div class="row lower-footer">
+        <div class="logo-container col-md-7 col-sm-7 col-xs-6">
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <?php
+                    echo $this->getLayout()
+                    ->createBlock('Magento\Cms\Block\Block')
+                    ->setBlockId('delilahs_logo')
+                    ->toHtml();
+                ?>
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-10">
+                <?php
+                    echo $this->getLayout()
+                    ->createBlock('Magento\Cms\Block\Block')
+                    ->setBlockId('delliahs_para')
+                    ->toHtml();
+                ?>
+            </div>
+        </div>
+        <div class="subscribe col-md-5 col-sm-5 col-xs-5">
+            <div class="col-md-12 col-sm-12 col-xs-12">    
+                <?php
+                    echo $this->getLayout()
+                    ->createBlock('Magento\Cms\Block\Block')
+                    ->setBlockId('delilahs_sub')
+                    ->toHtml();
+                ?>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <?php
+                    echo $this->getLayout()
+                    ->createBlock('Magento\Cms\Block\Block')
+                    ->setBlockId('delilahs_bmmi')
+                    ->toHtml();
+                ?>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-9">
+                <?php
+                    echo $this->getLayout()
+                    ->createBlock('Magento\Cms\Block\Block')
+                    ->setBlockId('delilahs_visit')
+                    ->toHtml();
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright row">
+        <?php
+            echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('delilahs_copyright')
+            ->toHtml();
+        ?>
+</div>

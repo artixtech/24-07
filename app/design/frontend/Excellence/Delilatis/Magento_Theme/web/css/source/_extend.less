@@ -230,11 +230,150 @@
 }
 //End Body Section
 //Start Footer Section
-.footer.content{
-    background: #f9e0e0;
-    padding-top: 35px;
-    padding-bottom:0px;
+
+.page-footer{
+    margin: 0 -155px;
+    .footer.content{
+        background:#e8c4c4;
+        padding-top: 35px;
+        padding-bottom:0px;
+        .row{
+            padding: 0px 164px;
+            height: 40px;
+            display: -webkit-inline-box;
+            .delilahs_social{
+                padding: 0px;
+                padding-bottom: 8px;
+                width: 55%;
+                border-bottom: 1px solid rgb(161, 48, 48) ;
+                .social_icon {
+                    display: inline-flex;
+                    padding: 0px;
+                    a{
+                        margin-right: 5px;  
+                    }
+                }
+                .social_link {
+                    padding-right: 0;
+                    padding-left: 25px;
+                    ul{
+                        display: inline-flex;
+                        font-family:@family;
+                        margin-top: 4px;
+                        font-size: 15px;
+                        a{
+                            color: #0e0c0c;
+                            text-decoration: none;
+                        }
+                        a:hover{
+                            color: rgb(156, 5, 5);
+                            text-decoration: none;
+                        }
+                        li{
+                            margin-right: 30px;
+                        }
+                    }
+                }
+            }
+            .delilahs_newsletter{
+                padding: 0px;
+                width: 45%;
+                .block.newsletter {
+                    width: 80%;
+                    .field.newsletter{
+                        margin-right: 0px;
+                        font-family:@family;
+                        #newsletter{
+                            font-size: 12px;
+                            height: 27px;
+                        }
+                    }
+                }
+            }
+        }
+        .lower-footer{
+            font-family: @family;
+            height: 80px;
+            .logo-container{
+                padding: 0px;
+                padding-top:8px;
+                .col-md-2.col-sm-2.col-xs-2{
+                    padding: 0px;
+                }
+                .col-md-10.col-sm-10.col-xs-10{
+                    font-family: @family;
+                    padding-top:7px;
+                    font-style: italic;
+                }
+            }
+            .subscribe{
+                padding-left: 40px;
+                font-style: italic;
+                .col-md-2.col-sm-2.col-xs-2{
+                    padding-right: 0px;
+                }
+                .col-md-9.col-sm-9.col-xs-9 {
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
 }
+.copyright.row{
+    background: #060f19;
+    margin-right: 0px;
+    margin-left: 0px;
+    ul{
+        list-style: none;
+        display: flex;
+        padding: 0px 165px;
+        margin-bottom: 0px;
+        font-family: @family;
+        li{
+            margin: 10px 0px;
+            margin-right: 35px;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                color: rgb(156, 5, 5);
+                text-decoration: none;
+            }
+        }
+    }
+}
+.block.newsletter{
+    margin-bottom:0px;
+    input {
+        padding-left: 20px;
+    }
+}
+.action{
+    line-height:1;
+}
+.action.primary{
+    background-color: black;
+    border: 1px solid #060708;
+    height: 27px;;
+    color: white;
+}
+.block.newsletter .action.subscribe {
+    border-radius: 0px;
+}
+.block.newsletter .action.subscribe {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.action.subscribe.primary{
+    span{
+        font-family:@family;
+        font-size: 13px;
+        font-weight: 300;
+    }
+}
+
+
 //End Footer Section
 
 @media only screen and (max-width: 768px) and (min-width: 426px){
@@ -288,6 +427,25 @@
     .block-search .action.search:before{
         color: #0e0c0c !important;
         font-size: 27px  !important;
+    }
+    .delilahs_social{
+        width: 61% !important;
+        .social_link{
+            padding-left: 15px !important;;
+            ul{
+                li{
+                    margin-right: 15px  !important;;
+                }
+            }
+        }
+    }
+    .delilahs_newsletter{
+        width: 39%;
+    }
+    .logo-container{
+        .col-md-10.col-sm-10.col-xs-10{
+            font-size: 11px;
+        }
     }
 }
 @media only screen and (max-width: 425px) and (min-width: 376px){
