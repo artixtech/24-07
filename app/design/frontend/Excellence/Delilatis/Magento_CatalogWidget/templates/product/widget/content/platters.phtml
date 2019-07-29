@@ -8,6 +8,8 @@
 
 /** @var \Magento\CatalogWidget\Block\Product\ProductsList $block */
 ?>
+
+<!-- echo "<pre>"; print_r($block->getProductCollection()->getData());die; -->
 <?php if ($exist = ($block->getProductCollection() && $block->getProductCollection()->getSize())): ?>
 <?php
 
@@ -24,7 +26,14 @@
     $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::DEFAULT_VIEW;
     $description = false;
 ?>
-<div class="bxslider">
+<!-- <div>
+        <img class="col-md-3 col-sm-3 col-xs-3" src="<?php echo $this->getViewFileUrl("images/watermark-left.jpg");?>"/>
+        <img class="col-md-3 col-sm-3 col-xs-3" src="<?php echo $this->getViewFileUrl("images/watermark-right.jpg");?>"/>
+        <div>
+            <span><?= /* @escapeNotVerified */ __('PLATTERS') ?></span></span>
+        </div>
+    </div> -->
+<div class="bxslider cake-slider">
     <?php 
         foreach ($items as $_item) {
     ?>

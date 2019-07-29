@@ -1,13 +1,3 @@
-<?php
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-// @codingStandardsIgnoreFile
-
-/** @var \Magento\CatalogWidget\Block\Product\ProductsList $block */
-?>
 <?php if ($exist = ($block->getProductCollection() && $block->getProductCollection()->getSize())): ?>
 <?php
 
@@ -25,13 +15,15 @@
     $description = false;
 ?>
 <div class="">
-    <!-- <div style="margin-left: 2%;">
-        <h2 style="font-weight: 600;font-family: 'Oswald', sans-serif;">
-            LES ESSENTIELS
-        </h2>
-    </div> -->
     <div>
-        <div class="bxslider cake-slider">
+        <img class="col-md-3 col-sm-3 col-xs-3" src="<?php echo $this->getViewFileUrl("images/watermark-left.jpg");?>"/>
+        <img class="col-md-3 col-sm-3 col-xs-3" src="<?php echo $this->getViewFileUrl("images/watermark-right.jpg");?>"/>
+        <div>
+            <span><?= /* @escapeNotVerified */ __('CAKES') ?></span></span>
+        </div>
+    </div>
+    <div>
+        <div class="bxslider main-slider">
             <?php 
                 foreach ($items as $_item) {
             ?>
@@ -45,6 +37,10 @@
                             href="<?= $block->escapeUrl($block->getProductUrl($_item)) ?>"
                             class="product-item-link">
                             <?= $block->escapeHtml($_item->getName()) ?>
+                            <!-- <?php
+                            //  getData($items);
+                            //  die("string");
+                             ?> -->
                         </a>
                     </strong>
                     <?php
@@ -59,24 +55,3 @@
     </div>
 </div>
 <?php endif;?>
-<!-- <script type="text/javascript" xml="space">
-    require([
-        'jquery',
-        'bxSlider'
-    ], function ($) {
-        'use strict';
-        // $.noConflict();
-
-    
-            $('.cake').bxSlider({
-                // controls: true,
-                captions: true,
-                slideWidth: 200,
-                minSlides:3,
-                maxSlides:3,
-                moveSlides:3
-            });
-        });
-    });
-
-</script> -->
